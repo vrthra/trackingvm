@@ -8,7 +8,7 @@ import enum
 
 from pycore import dataparser as dp
 from .vm import TrackerVM, Op
-from .tstr import tstr
+from taintedstr import tstr
 
 def log(var, i=1):
     print(repr(var), file=sys.stderr, flush=True)
